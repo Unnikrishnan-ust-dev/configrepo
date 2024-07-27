@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<bean name="rect" class="com.ust.iocday2.Rectangle" scope="prototype" init-method="init" destroy-method="destroy">
+		<property name="breadth" value="25.67"></property>
+		<property name="length" value="78.6658"></property>
+	</bean>
+	
+	<bean name="triangle" class="com.ust.iocday2.Triangle">
+		<property name="breadth" value="10"></property>
+		<property name="hypotenoues" value="20"></property>
+	</bean>
+	
+	<bean name="rhombus" class="com.ust.iocday2.Rhombus">
+		<property name="diag1" value="20"></property>
+		<property name="diag2" value="20"></property>
+	</bean>
+   
+
+</beans>
